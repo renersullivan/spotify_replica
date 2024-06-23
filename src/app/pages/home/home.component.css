@@ -1,12 +1,23 @@
+body{
+    margin: 0;
+    padding: 0
+    ;
+}
 .container-home{
     display: flex;
+    color: black;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+  
 }
-.home-menu{
+.menu-home{
     display: flex;
     width: 100%;
     height: auto;
-    background-color: #000000;
+    background-color: black;
 }
-.componet-menu{
-    display:flex;
+.menu-home img{
+    width: 150px;
+    height: 150px;
 }
