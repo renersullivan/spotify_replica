@@ -14,10 +14,38 @@ body{
 .menu-home{
     display: flex;
     width: 100%;
-    height: auto;
+    height: 80px;
     background-color: black;
+    justify-content: space-around;
+
 }
 .menu-home img{
     width: 150px;
-    height: 150px;
+    height: auto;
+}
+.btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.btn-menu p{
+    color: white;
+    padding: 28px 17px;
+            
+}
+.btn-menu a{
+    display: flex;
+   text-decoration: none;
+}
+.btn-menu :hover{
+    color: #1ed760;
+}
+
+
+
+@media (max-width: 768px){
+    .btn-menu{
+        display: none;
+    }
 }
