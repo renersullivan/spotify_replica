@@ -23,6 +23,7 @@ body{
 .menu-home img{
     width: 150px;
     height: auto;
+    padding: 15px;
 }
 .btn-menu{
     display: flex;
@@ -46,17 +47,36 @@ body{
     color: #1ed760;
 }
 .box-banner {
-    display: flex; 
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-    background-image: url('../../../assets/image/fundo-site.png'); 
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat; 
+    background: rgb(255,210,215);
 
-
+    background: linear-gradient(180deg, rgba(255,210,215,1) 0%,
+     rgba(0,0,0,1) 26%, rgba(0,0,0,1) 47%, rgba(12,13,14,1) 98%);
   }
-  
+  .btns-banner{
+    display: flex;
+    flex-direction: row;
+}
+.banner-texto{
+    display: flex;
+    color: white;
+}
+
+.btns-banner{
+    display: flex;
+    color: white;
+}
+.btn-experimente{
+    display: flex;
+    color: white;
+}
+
+.btn-ver-todos{   
+    display: flex;
+    color: white;
+}
 
 
 
