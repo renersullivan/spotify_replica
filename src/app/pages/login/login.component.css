@@ -1,3 +1,9 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+*,body,p, div{
+    font-family: "Roboto", sans-serif;
+}
 .container-login{
     display: flex;
     width: 100%;
