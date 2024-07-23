@@ -23,7 +23,7 @@ body{
     width: 100%;
     height: 80px;
     background-color: black;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 10px;
     align-items: center;
 
@@ -130,7 +130,21 @@ body{
     display: flex;
     
 }
+@media (max-width: 980px){
+    .btn-menu{
+        display: none;
+    }
+    .menu-mobile,
+    .abriu.menu-mobile-overflow{
+        display: flex;
+        transition: all 0.2s;
+        right: 0;
+    }
+    .menu-home{
+        justify-content: space-between;
+    }
 
+}
 
 @media (max-width: 768px){
     .btn-menu{
@@ -141,6 +155,9 @@ body{
         display: flex;
         transition: all 0.2s;
         right: 0;
+    }
+    .menu-home{
+        justify-content: space-between;
     }
 
 }
