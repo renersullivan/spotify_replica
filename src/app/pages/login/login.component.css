@@ -27,6 +27,5 @@
 
 .login-com-email{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;      
 }
