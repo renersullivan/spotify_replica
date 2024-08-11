@@ -22,12 +22,27 @@ div {
   align-items: center;
 }
 
+.logins-contas {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  text-indent: 0px;
+  width: 734px;
+  margin: 0px auto;
+  row-gap: normal;
+  align-items: center;
+
+}
+
 .login {
   color: white;
   row-gap: normal;
   border-radius: 8px;
   padding-bottom: 32px;
-  border: 1px solid green;
+  border: 1px solid white;
+  background-color: #121212;
+
 }
 
 .icon {
@@ -56,6 +71,7 @@ div {
   border-radius: 30px;
   display: flex;
   margin-bottom: 8px;
+  padding: 7px 31px;
 }
 
 .login-facebook {
@@ -67,9 +83,11 @@ div {
   height: 48px;
   border-radius: 30px;
   display: flex;
+  padding: 7px 31px;
 }
 
 .login-apple {
+  padding: 7px 31px;
   justify-content: center;
   align-items: center;
   border: 1px solid white;
@@ -81,6 +99,7 @@ div {
 }
 
 .login-telefone {
+  padding: 7px 31px;
   margin-bottom: 8px;
   justify-content: center;
   align-items: center;
