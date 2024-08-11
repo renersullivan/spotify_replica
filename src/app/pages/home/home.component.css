@@ -1,191 +1,217 @@
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 
 }
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
-*,body,p, div{
-    font-family: "Roboto", sans-serif;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-.container-home{
-    display: flex;
-    color: black;
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-    flex-direction: column  ;
-  
+
+*,
+body,
+p,
+div {
+  font-family: "Roboto", sans-serif;
 }
-.menu-home{
-    display: flex;
-    width: 100%;
-    height: 80px;
-    background-color: black;
-    justify-content: space-around;
-    padding: 0px 10px;
-    align-items: center;
+
+.container-home {
+  display: flex;
+  color: black;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
 
 }
-.menu-home img{
-    width: 142px;
-    height: 64px;
-    padding: 15px;
-}
-.btn-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.menu-home {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  justify-content: space-around;
+  padding: 0px 10px;
+  align-items: center;
 
 }
-.btn-menu p{
-    color: white;
-    padding: 28px 17px;
-    font-weight: 700;
-    font-style: normal;
-            
+
+.menu-home img {
+  width: 142px;
+  height: 64px;
+  padding: 15px;
 }
-.btn-menu a{
-    display: flex;
-   text-decoration: none;
+
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.btn-menu :hover{
-    color: #1ed760;
+
+.btn-menu p {
+  color: white;
+  padding: 28px 17px;
+  font-weight: 700;
+  font-style: normal;
+
 }
+
+.btn-menu a {
+  display: flex;
+  text-decoration: none;
+}
+
+.btn-menu :hover {
+  color: #1ed760;
+}
+
 .box-banner {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background: linear-gradient(180deg, #ffd2d7 0%,
-     rgba(0,0,0,1) 26%, rgba(0,0,0,1) 47%, rgba(12,13,14,1) 98%);
-  }
-  .btns-banner{
-    display: flex;
-    flex-direction: row;
-}
-.banner-texto{
-    display: flex;
-    flex-direction: column;
-    color: white;
-
-}
-.p-banner{
-    font-size: 41px;
-    font-weight: 900;
-    margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(180deg, #ffd2d7 0%,
+      rgba(0, 0, 0, 1) 26%, rgba(0, 0, 0, 1) 47%, rgba(12, 13, 14, 1) 98%);
 }
 
-.btns-banner{
-    display: flex;
-    color: white;
-}
-.btn-experimente{
-    display: flex;
-    color: black;
-    border: 1px solid #000000;
-    border-radius: 30px;
-    width: 276px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    background: #ffd2d7;
+.btns-banner {
+  display: flex;
+  flex-direction: row;
 }
 
-.btn-ver-todos{   
-    display: flex;
-    color: white;
-    border: 1px solid white;
-    border-radius: 30px;
-    width: 201px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 19px;
+.banner-texto {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
 }
 
-.menu-mobile{
+.p-banner {
+  font-size: 41px;
+  font-weight: 900;
+  margin: 0;
+}
+
+.btns-banner {
+  display: flex;
+  color: white;
+}
+
+.btn-experimente {
+  display: flex;
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  width: 276px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background: #ffd2d7;
+}
+
+.btn-ver-todos {
+  display: flex;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 201px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 19px;
+}
+
+.menu-mobile {
+  display: none;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.menu-mobile>div {
+  height: 3px;
+  background-color: white;
+  width: 26px;
+  margin-bottom: 3px;
+  transition: all 0.2s;
+}
+
+.abriu .barra-1,
+.abriu .barra-4 {
+  transition: all 0.2s;
+  opacity: 0;
+}
+
+.abriu .barra-2 {
+  transition: all 0.2s;
+  transform: rotate(45deg);
+}
+
+.abriu .barra-3 {
+  position: relative;
+  top: -6px;
+  transform: rotate(-45deg);
+}
+
+.menu-mobile-overflow {
+  position: absolute;
+  z-index: 100;
+  background: black;
+  height: 100vh;
+  width: 50vw;
+  min-width: 200px;
+  right: -100%;
+  transition: all 0.2s;
+  display: flex;
+
+}
+
+@media (max-width: 980px) {
+  .btn-menu {
     display: none;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    z-index: 100;
-}
+  }
 
-.menu-mobile > div {
-    height:3px;
-    background-color: white;
-    width:26px;
-    margin-bottom:3px;
-    transition: all 0.2s;
-}
-
-.abriu .barra-1,.abriu .barra-4{
-    transition: all 0.2s;
-    opacity: 0;
-}
-
-.abriu .barra-2{
-    transition: all 0.2s;
-    transform: rotate(45deg);
-}
-
-.abriu .barra-3{
-    position: relative;
-    top: -6px;
-    transform: rotate(-45deg);
-}
-
-.menu-mobile-overflow{
-    position: absolute;
-    z-index: 100;
-    background: black;
-    height: 100vh;
-    width: 50vw;
-    min-width: 200px;
-    right: -100%;
-    transition: all 0.2s; 
+  .menu-mobile,
+  .abriu.menu-mobile-overflow {
     display: flex;
-    
-}
-@media (max-width: 980px){
-    .btn-menu{
-        display: none;
-    }
-    .menu-mobile,
-    .abriu.menu-mobile-overflow{
-        display: flex;
-        transition: all 0.2s;
-        right: 0;
-    }
-    .menu-home{
-        justify-content: space-between;
-    }
+    transition: all 0.2s;
+    right: 0;
+  }
+
+  .menu-home {
+    justify-content: space-between;
+  }
 
 }
 
-@media (max-width: 768px){
-    .btn-menu{
-        display: none;
-    }
-    .menu-mobile,
-    .abriu.menu-mobile-overflow{
-        display: flex;
-        transition: all 0.2s;
-        right: 0;
-    }
-    .menu-home{
-        justify-content: space-between;
-    }
-    .box-banner{
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  .btn-menu {
+    display: none;
+  }
+
+  .menu-mobile,
+  .abriu.menu-mobile-overflow {
+    display: flex;
+    transition: all 0.2s;
+    right: 0;
+  }
+
+  .menu-home {
+    justify-content: space-between;
+  }
+
+  .box-banner {
+    flex-direction: column;
+  }
 
 }
 
-@media (max-width: 500px){
-    .abriu.menu-mobile-overflow{
-        width: 100vw;
-    }
+@media (max-width: 500px) {
+  .abriu.menu-mobile-overflow {
+    width: 100vw;
+  }
 }
