@@ -40,7 +40,7 @@ div {
   row-gap: normal;
   border-radius: 8px;
   padding-bottom: 32px;
-  border: 1px solid white;
+  border: 1px solid #121212;
   background-color: #121212;
 
 }
@@ -63,51 +63,63 @@ div {
 }
 
 .login-goolge {
-  justify-content: center;
   align-items: center;
   border: 1px solid white;
   width: 324px;
   height: 48px;
   border-radius: 30px;
-  display: flex;
+  display: inline-flex;
   margin-bottom: 8px;
   padding: 7px 31px;
 }
 
 .login-facebook {
   margin-bottom: 8px;
-  justify-content: center;
   align-items: center;
   border: 1px solid white;
   width: 324px;
   height: 48px;
   border-radius: 30px;
-  display: flex;
+  display: inline-flex;
   padding: 7px 31px;
 }
 
 .login-apple {
   padding: 7px 31px;
-  justify-content: center;
   align-items: center;
   border: 1px solid white;
   width: 324px;
   height: 48px;
   border-radius: 30px;
-  display: flex;
+  display: inline-flex;
   margin-bottom: 8px;
+
 }
 
 .login-telefone {
   padding: 7px 31px;
   margin-bottom: 8px;
-  justify-content: center;
   align-items: center;
   border: 1px solid white;
   width: 324px;
   height: 48px;
   border-radius: 30px;
+  display: inline-flex;
+}
+
+.p-telefone {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.icon-svg {
+
+  font-size: 20px;
+  margin-right: 22px;
+  vertical-align: middle;
 }
 
 .barra {
@@ -122,4 +134,38 @@ div {
 .login-com-email {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  text-indent: 0px;
+  width: 734px;
+  margin: 0px auto;
+  row-gap: normal;
+  align-items: center;
+
+
+}
+
+.login-com-email label>p {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 0px 8px;
+
+}
+
+.form-input {
+  padding: 0px 0px 16px;
+}
+
+.form-input input {
+  inline-size: 100%;
+  box-sizing: border-box;
+  width: 324px;
+  padding: 12px 16px;
+  color: #ffffff;
+  background: transparent;
+
+  border: 1px solid #a3a3a1;
 }
