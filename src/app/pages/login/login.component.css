@@ -1,37 +1,106 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
-*,body,p, div{
-    font-family: "Roboto", sans-serif;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
-.container-login{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background: rgb(11,11,11);
-    background: linear-gradient(0deg, rgba(11,11,11,1) 0%, rgba(0,0,11,1) 35%, rgba(0,0,0,1) 80%, rgba(86,89,89,1) 100%);
+
+*,
+body,
+p,
+div {
+  font-family: "Roboto", sans-serif;
 }
-.login{
-    color: white;
-    row-gap: normal;
-    border-radius: 8px;
-    padding-bottom: 32px;
-    border: 1px solid green;
+
+.container-login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: rgb(11, 11, 11);
+  background: linear-gradient(0deg, rgba(11, 11, 11, 1) 0%,
+      rgba(0, 0, 11, 1) 35%, rgba(0, 0, 0, 1) 80%, rgba(86, 89, 89, 1) 100%);
+  justify-content: center;
+  align-items: center;
 }
-.icon svg{
-    width: 24px;
+
+.login {
+  color: white;
+  row-gap: normal;
+  border-radius: 8px;
+  padding-bottom: 32px;
+  border: 1px solid green;
 }
-.login-goolge {}
 
-.login-facebook{}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
 
-.login-apple{}
+.icon svg {
+  width: 36px;
+}
 
-.login-telefone{}
+.h1-entrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.barra{}
+.login-goolge {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 324px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 8px;
+}
 
-.login-com-email{
-    display: flex;
-    flex-direction: column;      
+.login-facebook {
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 324px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.login-apple {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 324px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.login-telefone {
+  margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  width: 324px;
+  height: 48px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.barra {
+  margin: 32px 100px;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+  border-image: initial;
+  border-top: 1px solid rgb(41, 41, 41);
+}
+
+.login-com-email {
+  display: flex;
+  flex-direction: column;
 }

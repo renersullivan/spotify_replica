@@ -205,10 +205,16 @@ div {
   }
 
   .box-banner {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .p-banner {
+    width: 100vh;
   }
 
 }
+
+
 
 @media (max-width: 500px) {
   .abriu.menu-mobile-overflow {
