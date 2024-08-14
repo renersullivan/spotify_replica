@@ -71,6 +71,7 @@ div {
   display: inline-flex;
   margin-bottom: 8px;
   padding: 7px 31px;
+  cursor: pointer;
 }
 
 .login-facebook {
@@ -82,6 +83,7 @@ div {
   border-radius: 30px;
   display: inline-flex;
   padding: 7px 31px;
+  cursor: pointer;
 }
 
 .login-apple {
@@ -93,6 +95,7 @@ div {
   border-radius: 30px;
   display: inline-flex;
   margin-bottom: 8px;
+  cursor: pointer;
 
 }
 
@@ -105,6 +108,7 @@ div {
   height: 48px;
   border-radius: 30px;
   display: inline-flex;
+  cursor: pointer;
 }
 
 .p-telefone {
@@ -153,6 +157,7 @@ div {
   justify-content: flex-start;
   padding: 0px 0px 8px;
 
+
 }
 
 .form-input {
@@ -168,4 +173,11 @@ div {
   background: transparent;
 
   border: 1px solid #a3a3a1;
+}
+
+.checkbox {
+  width: 734px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px auto;
 }
