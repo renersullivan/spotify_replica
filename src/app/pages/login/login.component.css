@@ -249,6 +249,12 @@ input[type="radio"]:checked+.slider:before {
   cursor: pointer;
   border-radius: 30px;
   color: #000;
+
+}
+
+.btn-entrar a {
+  text-decoration: none;
+  color: #000;
 }
 
 .esqueceu-senha {
