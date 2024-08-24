@@ -19,14 +19,30 @@
   width: 100%;
   height: auto;
   flex-direction: column;
+  padding: 14px;
 
+}
+
+.inicio img {
+  width: 120px;
+  margin-bottom: 9px;
 }
 
 .buscar-btn p {
   color: #ffffff;
 }
 
-.iniciar-btn p {
+.buscar-btn {
+  display: flex;
+  align-items: center;
+}
+
+.inicio-btn {
+  display: flex;
+  align-items: center;
+}
+
+.inicio-btn p {
   color: #ffffff;
 }
 
